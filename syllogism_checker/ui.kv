@@ -1,0 +1,13 @@
+BoxLayout:
+    orientation: 'vertical'
+    TextInput:
+        id: syllogism_input
+        hint_text: "Paste your syllogism here"
+        size_hint: (1, 0.7)
+    Button:
+        text: "Check logic"
+        size_hint: (1, 0.1)
+        on_press: app.check_logic()
+    Label:
+        id: result_label
+        size_hint: (1, 0.2)
